@@ -30,5 +30,6 @@ struct UserUsecase<T: UserRepository> {
 
 private extension UserUsecase {
     func test() {
+        print("aa")
     }
 }

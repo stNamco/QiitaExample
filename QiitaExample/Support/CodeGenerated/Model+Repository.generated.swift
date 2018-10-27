@@ -5,50 +5,6 @@ import Foundation
 import Moya
 import Result
 
-// MARK: Article Model
-
-protocol ArticleRepository: RepositoryType {
-    associatedtype Model = Article
-    var datasource: DatasourceType { get }
-}
-
-final class DefaultArticleRepository: ArticleRepository {
-    public var datasource: DatasourceType
-    public var dataProvider: MoyaProvider<QiitaAPI>
-    
-    init(dataProvider: MoyaProvider<QiitaAPI> = qiitaProvider, datasource: DatasourceType = RealmDatasource()) {
-        self.datasource = datasource
-        self.dataProvider = dataProvider
-    }
-    
-    func store(item: Entity) {
-        datasource.store(item: item)
-    }
-    
-    func item(id: String) {
-        datasource.item(id: id)
-    }
-    
-    func items(target: QiitaAPI, completion: @escaping ((Result<[Model], GeneralError>) -> Void)) {
-        qiitaProvider.requestWithMapping(target, entity: Article.self, entityType: .items) { [weak self] result in
-            switch result {
-            case .success(let res):
-                res.items.forEach({ [weak self] item in
-                    guard let this = self else { return }
-                    this.datasource.store(item: item)
-                })
-                completion(.success(res.items))
-            case .failure(let err):
-                completion(.failure(GeneralError.unknown(msg: err.errorDescription)))
-            }
-        }
-    }
-    
-    func delete(id: String) {
-        datasource.delete(id: id)
-    }
-}
-
 // MARK: User Model
 
 protocol UserRepository: RepositoryType {
@@ -57,28 +13,29 @@ protocol UserRepository: RepositoryType {
 }
 
 final class DefaultUserRepository: UserRepository {
+
     public var datasource: DatasourceType
     public var dataProvider: MoyaProvider<QiitaAPI>
-    
+
     init(dataProvider: MoyaProvider<QiitaAPI> = qiitaProvider, datasource: DatasourceType = RealmDatasource()) {
         self.datasource = datasource
         self.dataProvider = dataProvider
     }
-    
+
     func store(item: Entity) {
         datasource.store(item: item)
     }
-    
+
     func item(id: String) {
         datasource.item(id: id)
     }
-    
+
     func items(target: QiitaAPI, completion: @escaping ((Result<[Model], GeneralError>) -> Void)) {
-        qiitaProvider.requestWithMapping(target, entity: User.self, entityType: .items) { [weak self] result in
-            switch result {
+        qiitaProvider.requestWithMapping(target, entity: User.self, entityType: .items) { [weak self] (result) in
+        switch result {
             case .success(let res):
-                res.items.forEach({ [weak self] item in
-                    guard let this = self else { return }
+                res.items.forEach({ [weak self] (item) in
+                    guard let this = self else {return}
                     this.datasource.store(item: item)
                 })
                 completion(.success(res.items))
@@ -87,8 +44,9 @@ final class DefaultUserRepository: UserRepository {
             }
         }
     }
-    
+
     func delete(id: String) {
         datasource.delete(id: id)
     }
 }
+

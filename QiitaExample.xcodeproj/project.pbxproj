@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03FE223421848AB90091C707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE223321848AB90091C707 /* AppDelegate.swift */; };
-		03FE223621848AB90091C707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE223521848AB90091C707 /* ViewController.swift */; };
-		03FE223921848AB90091C707 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FE223721848AB90091C707 /* Main.storyboard */; };
 		03FE223B21848ABC0091C707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FE223A21848ABC0091C707 /* Assets.xcassets */; };
-		03FE223E21848ABC0091C707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FE223C21848ABC0091C707 /* LaunchScreen.storyboard */; };
 		03FE224921848ABC0091C707 /* QiitaExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE224821848ABC0091C707 /* QiitaExampleTests.swift */; };
 		03FE225421848ABC0091C707 /* QiitaExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE225321848ABC0091C707 /* QiitaExampleUITests.swift */; };
 		03FE2275218496AD0091C707 /* Model+Repository.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 03FE2274218496AD0091C707 /* Model+Repository.stencil */; };
@@ -54,10 +51,7 @@
 /* Begin PBXFileReference section */
 		03FE223021848AB90091C707 /* QiitaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FE223321848AB90091C707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03FE223521848AB90091C707 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03FE223821848AB90091C707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03FE223A21848ABC0091C707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		03FE223D21848ABC0091C707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03FE223F21848ABC0091C707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03FE224421848ABC0091C707 /* QiitaExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiitaExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FE224821848ABC0091C707 /* QiitaExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaExampleTests.swift; sourceTree = "<group>"; };
@@ -152,9 +146,6 @@
 				03FE226121848FDF0091C707 /* Screens */,
 				03FE226421848FFF0091C707 /* Support */,
 				03FE226221848FE80091C707 /* Utilities */,
-				03FE223C21848ABC0091C707 /* LaunchScreen.storyboard */,
-				03FE223721848AB90091C707 /* Main.storyboard */,
-				03FE223521848AB90091C707 /* ViewController.swift */,
 			);
 			path = QiitaExample;
 			sourceTree = "<group>";
@@ -440,8 +431,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				03FE223B21848ABC0091C707 /* Assets.xcassets in Resources */,
-				03FE223E21848ABC0091C707 /* LaunchScreen.storyboard in Resources */,
-				03FE223921848AB90091C707 /* Main.storyboard in Resources */,
 				03FE227C2184972B0091C707 /* MainViewController.storyboard in Resources */,
 				03FE2275218496AD0091C707 /* Model+Repository.stencil in Resources */,
 			);
@@ -595,7 +584,6 @@
 				03FE2286218498520091C707 /* RepositoryType.swift in Sources */,
 				03FE22A021849F2E0091C707 /* User.swift in Sources */,
 				03FE229F21849F2E0091C707 /* UserUsecase.swift in Sources */,
-				03FE223621848AB90091C707 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,25 +617,6 @@
 			targetProxy = 03FE225021848ABC0091C707 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		03FE223721848AB90091C707 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03FE223821848AB90091C707 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		03FE223C21848ABC0091C707 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03FE223D21848ABC0091C707 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		03FE225621848ABC0091C707 /* Debug */ = {
