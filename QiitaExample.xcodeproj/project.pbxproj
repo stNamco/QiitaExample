@@ -188,6 +188,9 @@
 		03FE2266218490510091C707 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				03FE2273218495CE0091C707 /* DataProvider */,
+				03FE2272218495C30091C707 /* Model */,
+				03FE2271218495B80091C707 /* Datasource */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -204,6 +207,35 @@
 			children = (
 			);
 			path = CodeGenerated;
+			sourceTree = "<group>";
+		};
+		03FE226A218495910091C707 /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		03FE2271218495B80091C707 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		03FE2272218495C30091C707 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03FE226A218495910091C707 /* User */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03FE2273218495CE0091C707 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataProvider;
 			sourceTree = "<group>";
 		};
 		710E00054C1CF481E69558D0 /* Pods */ = {

@@ -18,9 +18,6 @@ createTemplate () {
   	
     cp -R $SCRIPT_DIR/$CUSTOM_TEMPLATE_DIR_NAME.xctemplate/ownsView/* "$XCODE_TEMPLATE_DIR/$CUSTOM_TEMPLATE_DIR_NAME.xctemplate/ownsViewwithXIB/"
   	cp -R $SCRIPT_DIR/$CUSTOM_TEMPLATE_DIR_NAME.xctemplate/ownsView/* "$XCODE_TEMPLATE_DIR/$CUSTOM_TEMPLATE_DIR_NAME.xctemplate/ownsViewwithStoryboard/"	
-
-    cp -R $SCRIPT_DIR/Domain.xctemplate/domain/* "$XCODE_TEMPLATE_DIR/Domain.xctemplate/domainWithProtocol/"
-    cp -R $SCRIPT_DIR/Domain.xctemplate/domain/* "$XCODE_TEMPLATE_DIR/Domain.xctemplate/domainWithDatasource/"
 }
 
 createTemplate
