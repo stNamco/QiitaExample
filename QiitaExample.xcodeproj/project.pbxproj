@@ -114,9 +114,12 @@
 		03FE223221848AB90091C707 /* QiitaExample */ = {
 			isa = PBXGroup;
 			children = (
-				03FE223321848AB90091C707 /* AppDelegate.swift */,
-				03FE223A21848ABC0091C707 /* Assets.xcassets */,
-				03FE223F21848ABC0091C707 /* Info.plist */,
+				03FE2266218490510091C707 /* Domain */,
+				03FE22652184900A0091C707 /* Resources */,
+				03FE226421848FFF0091C707 /* Support */,
+				03FE226321848FF10091C707 /* Application */,
+				03FE226121848FDF0091C707 /* Screens */,
+				03FE226221848FE80091C707 /* Services */,
 				03FE223C21848ABC0091C707 /* LaunchScreen.storyboard */,
 				03FE223721848AB90091C707 /* Main.storyboard */,
 				03FE223521848AB90091C707 /* ViewController.swift */,
@@ -140,6 +143,51 @@
 				03FE225321848ABC0091C707 /* QiitaExampleUITests.swift */,
 			);
 			path = QiitaExampleUITests;
+			sourceTree = "<group>";
+		};
+		03FE226121848FDF0091C707 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		03FE226221848FE80091C707 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		03FE226321848FF10091C707 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				03FE223321848AB90091C707 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		03FE226421848FFF0091C707 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				03FE223F21848ABC0091C707 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		03FE22652184900A0091C707 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03FE223A21848ABC0091C707 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		03FE2266218490510091C707 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		710E00054C1CF481E69558D0 /* Pods */ = {
@@ -574,7 +622,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23SNN8KHW7;
-				INFOPLIST_FILE = QiitaExample/Info.plist;
+				INFOPLIST_FILE = QiitaExample/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -594,7 +642,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23SNN8KHW7;
-				INFOPLIST_FILE = QiitaExample/Info.plist;
+				INFOPLIST_FILE = QiitaExample/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
