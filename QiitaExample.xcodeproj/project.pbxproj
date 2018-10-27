@@ -114,14 +114,14 @@
 		03FE223221848AB90091C707 /* QiitaExample */ = {
 			isa = PBXGroup;
 			children = (
+				03FE226321848FF10091C707 /* Application */,
 				03FE2268218491970091C707 /* CodeGenerated */,
-				03FE22672184918D0091C707 /* Templates */,
 				03FE2266218490510091C707 /* Domain */,
 				03FE22652184900A0091C707 /* Resources */,
-				03FE226421848FFF0091C707 /* Support */,
-				03FE226321848FF10091C707 /* Application */,
 				03FE226121848FDF0091C707 /* Screens */,
 				03FE226221848FE80091C707 /* Services */,
+				03FE226421848FFF0091C707 /* Support */,
+				03FE22672184918D0091C707 /* Templates */,
 				03FE223C21848ABC0091C707 /* LaunchScreen.storyboard */,
 				03FE223721848AB90091C707 /* Main.storyboard */,
 				03FE223521848AB90091C707 /* ViewController.swift */,
@@ -189,8 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				03FE2273218495CE0091C707 /* DataProvider */,
-				03FE2272218495C30091C707 /* Model */,
 				03FE2271218495B80091C707 /* Datasource */,
+				03FE2272218495C30091C707 /* Model */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
