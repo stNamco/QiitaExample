@@ -1,6 +1,0 @@
-framework module Pods_QiitaExampleUITests {
-  umbrella header "Pods-QiitaExampleUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
