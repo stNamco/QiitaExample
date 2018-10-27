@@ -14,6 +14,7 @@ public typealias Entity = Codable
 public typealias ResultCompletion<T: Entity> = (_ result: Result<ResultObject<T>, MoyaError>) -> Void
 
 public protocol AggregatedModelType {}
+
 public struct ResultObject<T: Entity> {
     public var response: Response
     public var items: [T]

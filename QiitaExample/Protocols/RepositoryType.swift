@@ -13,7 +13,7 @@ import Result
 public protocol RepositoryType {
     associatedtype Model = Entity
     var datasource: DatasourceType { get }
-    var dataProvider: MoyaProvider<QiitaAPI> { get } // protocolで判定できるはず。
+    var dataProvider: MoyaProvider<QiitaAPI> { get }
     func store(item: Entity)
     func item(id: String)
     func items(target: QiitaAPI, completion: @escaping ((_ result: Result<[Model], GeneralError>) -> Void))

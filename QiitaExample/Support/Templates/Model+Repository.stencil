@@ -1,5 +1,6 @@
 import Foundation
 import Moya
+import Result
 
 {% for type in types.based.AggregatedModelType %}
 // MARK: {{ type.name }} Model
@@ -14,7 +15,7 @@ final class Default{{type.name}}Repository: {{type.name}}Repository {
     public var datasource: DatasourceType
     public var dataProvider: MoyaProvider<QiitaAPI>
 
-    init(dataProvider: MoyaProvider<QiitaAPI> = qiitaProvider, datasource: DatasourceType = FirestoreDatasource()) {
+    init(dataProvider: MoyaProvider<QiitaAPI> = qiitaProvider, datasource: DatasourceType = RealmDatasource()) {
         self.datasource = datasource
         self.dataProvider = dataProvider
     }

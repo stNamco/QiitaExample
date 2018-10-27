@@ -26,6 +26,9 @@
 		03FE228A218498920091C707 /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE2289218498920091C707 /* QiitaAPI.swift */; };
 		03FE228C218499150091C707 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE228B218499150091C707 /* Error.swift */; };
 		03FE228E21849AAD0091C707 /* Model+Repository.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE228D21849AAD0091C707 /* Model+Repository.generated.swift */; };
+		03FE229821849E220091C707 /* RealmDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE229721849E220091C707 /* RealmDatasource.swift */; };
+		03FE229F21849F2E0091C707 /* UserUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE229D21849F2E0091C707 /* UserUsecase.swift */; };
+		03FE22A021849F2E0091C707 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE229E21849F2E0091C707 /* User.swift */; };
 		12ECEEEB3DBC684792F0DB09 /* Pods_QiitaExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BB0ADAD8A925C1AA591674 /* Pods_QiitaExampleUITests.framework */; };
 		AD5E96ADAE987FC402CC9471 /* Pods_QiitaExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3826982AF046FA8DE03952 /* Pods_QiitaExampleTests.framework */; };
 		B287D871BABFF6BE52BB8DF1 /* Pods_QiitaExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FC166F0C5B640F40BD10A5 /* Pods_QiitaExample.framework */; };
@@ -74,6 +77,9 @@
 		03FE2289218498920091C707 /* QiitaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
 		03FE228B218499150091C707 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		03FE228D21849AAD0091C707 /* Model+Repository.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Model+Repository.generated.swift"; sourceTree = "<group>"; };
+		03FE229721849E220091C707 /* RealmDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatasource.swift; sourceTree = "<group>"; };
+		03FE229D21849F2E0091C707 /* UserUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUsecase.swift; sourceTree = "<group>"; };
+		03FE229E21849F2E0091C707 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1C5F83B917858EA36C9E4388 /* Pods-QiitaExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QiitaExampleUITests/Pods-QiitaExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		32AA991562C807B9AB33C213 /* Pods-QiitaExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QiitaExample/Pods-QiitaExample.debug.xcconfig"; sourceTree = "<group>"; };
 		48BB0ADAD8A925C1AA591674 /* Pods_QiitaExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QiitaExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,6 +248,8 @@
 		03FE226A218495910091C707 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				03FE229D21849F2E0091C707 /* UserUsecase.swift */,
+				03FE229E21849F2E0091C707 /* User.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 		03FE2271218495B80091C707 /* Datasource */ = {
 			isa = PBXGroup;
 			children = (
+				03FE229721849E220091C707 /* RealmDatasource.swift */,
 			);
 			path = Datasource;
 			sourceTree = "<group>";
@@ -328,12 +337,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03FE225821848ABC0091C707 /* Build configuration list for PBXNativeTarget "QiitaExample" */;
 			buildPhases = (
+				03FE2269218491AF0091C707 /* Run Script - SwiftFormat */,
 				9F39C28626A1C79E26A82310 /* [CP] Check Pods Manifest.lock */,
 				03FE222C21848AB90091C707 /* Sources */,
 				03FE222D21848AB90091C707 /* Frameworks */,
 				03FE222E21848AB90091C707 /* Resources */,
 				BE7507873DA67245A9394104 /* [CP] Embed Pods Frameworks */,
-				03FE2269218491AF0091C707 /* Run Script - SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -577,7 +586,10 @@
 				03FE22822184981F0091C707 /* DatasourceType.swift in Sources */,
 				03FE228C218499150091C707 /* Error.swift in Sources */,
 				03FE22802184977B0091C707 /* Injectable.swift in Sources */,
+				03FE229821849E220091C707 /* RealmDatasource.swift in Sources */,
+				03FE229F21849F2E0091C707 /* UserUsecase.swift in Sources */,
 				03FE227B2184972B0091C707 /* MainPresenter.swift in Sources */,
+				03FE22A021849F2E0091C707 /* User.swift in Sources */,
 				03FE227D2184972B0091C707 /* MainViewController.swift in Sources */,
 				03FE228E21849AAD0091C707 /* Model+Repository.generated.swift in Sources */,
 				03FE2284218498370091C707 /* ModelType.swift in Sources */,
