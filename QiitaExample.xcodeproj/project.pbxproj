@@ -114,6 +114,8 @@
 		03FE223221848AB90091C707 /* QiitaExample */ = {
 			isa = PBXGroup;
 			children = (
+				03FE2268218491970091C707 /* CodeGenerated */,
+				03FE22672184918D0091C707 /* Templates */,
 				03FE2266218490510091C707 /* Domain */,
 				03FE22652184900A0091C707 /* Resources */,
 				03FE226421848FFF0091C707 /* Support */,
@@ -190,6 +192,20 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		03FE22672184918D0091C707 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		03FE2268218491970091C707 /* CodeGenerated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CodeGenerated;
+			sourceTree = "<group>";
+		};
 		710E00054C1CF481E69558D0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +241,7 @@
 				03FE222D21848AB90091C707 /* Frameworks */,
 				03FE222E21848AB90091C707 /* Resources */,
 				BE7507873DA67245A9394104 /* [CP] Embed Pods Frameworks */,
+				03FE2269218491AF0091C707 /* Run Script - SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -344,6 +361,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		03FE2269218491AF0091C707 /* Run Script - SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - SwiftFormat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "Pods/Sourcery/bin/sourcery --sources \"QiitaExample\" --templates \"QiitaExample/Templates\" --output \"QiitaExample/CodeGenerated\"\n";
+		};
 		3CB162E25DEA1542EB10EDD0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
