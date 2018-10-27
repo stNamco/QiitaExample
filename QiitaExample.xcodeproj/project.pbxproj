@@ -334,6 +334,7 @@
 				03FE222D21848AB90091C707 /* Frameworks */,
 				03FE222E21848AB90091C707 /* Resources */,
 				BE7507873DA67245A9394104 /* [CP] Embed Pods Frameworks */,
+				03FE22AC2184A48D0091C707 /* Run Script - SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -470,6 +471,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "Pods/Sourcery/bin/sourcery --sources \"QiitaExample\" --templates \"QiitaExample/Support/Templates\" --output \"QiitaExample/Support/CodeGenerated\"\n";
+		};
+		03FE22AC2184A48D0091C707 /* Run Script - SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		3CB162E25DEA1542EB10EDD0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

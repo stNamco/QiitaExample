@@ -3,6 +3,7 @@ excluded:
  - Carthage/
  - SourceryExamples/Resource/R.generated.swift
  - R.generated.swift
+ - Scripts/
 
 type_body_length:
 - 400   # warning

@@ -9,6 +9,9 @@
 import UIKit
 
 final class MainViewController: UIViewController, VCInjectable {
+
+    @IBOutlet weak var tableView: UITableView!
+
     struct Dependency: VCDependency {}
     var presenter: MainPresenter!
     
@@ -32,6 +35,8 @@ final class MainViewController: UIViewController, VCInjectable {
 
 private extension MainViewController {
     func configure() {
+        tableView.dataSource = self
+        tableView.delegate = self
     }
 }
 
@@ -49,3 +54,28 @@ extension MainViewController {
 
 extension MainViewController {
 }
+
+// MARK: - UIT
+
+extension MainViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.backgroundColor = UIColor.blue
+        cell.textLabel?.text = "test"
+        return cell
+    }
+
+}
+
+// MARK: - UIT
+
+extension MainViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("tap: \(indexPath.row)")
+    }
+}
+
