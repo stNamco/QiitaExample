@@ -21,7 +21,6 @@ final class MainPresenter {
     init(view: MainView, dependency: MainViewController.Dependency) {
         self.view = view
         props = dependency
-
     }
 }
 

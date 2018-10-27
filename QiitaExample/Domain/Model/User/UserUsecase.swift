@@ -35,7 +35,7 @@ private extension UserUsecase {
     func test() {
         print("test")
     }
-
+    
     func getUsers(page: Int, perPage: Int, completion: @escaping ((_ result: Result<[User], GeneralError>) -> Void)) {
         repository.items(target: .users(page: page, perPage: perPage)) { result in
             switch result {
