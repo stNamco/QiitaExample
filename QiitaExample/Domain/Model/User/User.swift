@@ -10,4 +10,18 @@ import Foundation
 
 struct User: Entity, AggregatedModelType {
     var id: String
+    var description: String?
+    var followersCount: Int?
+    var facebookId: String?
+    var permanentId: Int?
+    var githubLoginName: String?
+    var twitterScreenName: String?
+    var followeesCount: Int?
+    var websiteUrl: String?
+    var linkedinId: String?
+    var profileImageUrl: String?
+    var location: String?
+    var itemsCount: Int?
+    var name: String?
+    var organization: String?
 }

@@ -37,12 +37,17 @@ private extension MainViewController {
     func configure() {
         tableView.dataSource = self
         tableView.delegate = self
+
+        presenter.fetch()
     }
 }
 
 // MARK: - View
 
 extension MainViewController: MainView {
+    func reloadTable() {
+        tableView.reloadData()
+    }
 }
 
 // MARK: - Pubric
@@ -59,13 +64,14 @@ extension MainViewController {
 
 extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return presenter.data.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = presenter.data[indexPath.row]
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.backgroundColor = UIColor.blue
-        cell.textLabel?.text = "test"
+        cell.textLabel?.text = item.id
         return cell
     }
 
@@ -78,4 +84,3 @@ extension MainViewController: UITableViewDelegate {
         print("tap: \(indexPath.row)")
     }
 }
-
