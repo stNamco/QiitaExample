@@ -1,0 +1,53 @@
+excluded:
+ - Pods/
+ - Carthage/
+ - SourceryExamples/Resource/R.generated.swift
+ - R.generated.swift
+
+type_body_length:
+- 400   # warning
+- 600   # error
+
+file_length:
+- 400   # warning
+- 1000  # error
+
+function_body_length:
+- 100   # warning
+- 200   # error
+
+opt_in_rules:
+ - closure_end_indentation
+ # - closure_spacing
+ # - conditional_returns_on_newline
+ - empty_count
+ - explicit_init
+ # - explicit_type_interface
+ - fatal_error_message
+ - first_where
+ - force_unwrapping
+ - nimble_operator
+ - number_separator
+ - operator_usage_whitespace
+ - overridden_super_call
+ - prohibited_super_call
+ - redundant_nil_coalescing
+ - sorted_imports
+ - switch_case_on_newline
+
+disabled_rules:
+ - trailing_whitespace
+ # we cannot use this rule, if use enum.
+ - cyclomatic_complexity
+ - line_length
+ - large_tuple
+ - implicitly_unwrapped_optional
+ - attributes
+ - object_literal
+ - private_outlet
+ - number_separator
+ - identifier_name
+
+identifier_name:
+  min_length:
+    warning: 1
