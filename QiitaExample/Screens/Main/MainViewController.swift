@@ -1,4 +1,4 @@
-// 
+//
 //  MainViewController.swift
 //  QiitaExample
 //

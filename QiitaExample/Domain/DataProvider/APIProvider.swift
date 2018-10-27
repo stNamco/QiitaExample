@@ -6,9 +6,9 @@
 //  Copyright © 2018年 namco. All rights reserved.
 //
 
+import Alamofire
 import Foundation
 import Moya
-import Alamofire
 
 // MARK: - Provider setup
 
@@ -44,7 +44,7 @@ public let qiitaProvider = MoyaProvider<QiitaAPI>(
     plugins: [
         NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter),
         NetworkActivityPlugin(networkActivityClosure: networkActivityClosure)
-    ])
+])
 
 let endpointClosure = { (target: QiitaAPI) -> Endpoint in
     let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)

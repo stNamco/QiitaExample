@@ -138,14 +138,14 @@
 		03FE223221848AB90091C707 /* QiitaExample */ = {
 			isa = PBXGroup;
 			children = (
-				03FE2277218496E00091C707 /* Extensions */,
-				03FE2276218496D90091C707 /* Protocols */,
 				03FE226321848FF10091C707 /* Application */,
 				03FE2266218490510091C707 /* Domain */,
+				03FE2277218496E00091C707 /* Extensions */,
+				03FE2276218496D90091C707 /* Protocols */,
 				03FE22652184900A0091C707 /* Resources */,
 				03FE226121848FDF0091C707 /* Screens */,
-				03FE226221848FE80091C707 /* Utilities */,
 				03FE226421848FFF0091C707 /* Support */,
+				03FE226221848FE80091C707 /* Utilities */,
 				03FE223C21848ABC0091C707 /* LaunchScreen.storyboard */,
 				03FE223721848AB90091C707 /* Main.storyboard */,
 				03FE223521848AB90091C707 /* ViewController.swift */,
@@ -273,8 +273,8 @@
 		03FE2276218496D90091C707 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				03FE227F2184977B0091C707 /* Injectable.swift */,
 				03FE22812184981F0091C707 /* DatasourceType.swift */,
+				03FE227F2184977B0091C707 /* Injectable.swift */,
 				03FE2283218498370091C707 /* ModelType.swift */,
 				03FE2285218498520091C707 /* RepositoryType.swift */,
 			);
@@ -430,11 +430,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03FE227C2184972B0091C707 /* MainViewController.storyboard in Resources */,
-				03FE2275218496AD0091C707 /* Model+Repository.stencil in Resources */,
 				03FE223B21848ABC0091C707 /* Assets.xcassets in Resources */,
 				03FE223E21848ABC0091C707 /* LaunchScreen.storyboard in Resources */,
 				03FE223921848AB90091C707 /* Main.storyboard in Resources */,
+				03FE227C2184972B0091C707 /* MainViewController.storyboard in Resources */,
+				03FE2275218496AD0091C707 /* Model+Repository.stencil in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,18 +572,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03FE223421848AB90091C707 /* AppDelegate.swift in Sources */,
-				03FE2286218498520091C707 /* RepositoryType.swift in Sources */,
-				03FE227B2184972B0091C707 /* MainPresenter.swift in Sources */,
-				03FE228C218499150091C707 /* Error.swift in Sources */,
-				03FE22822184981F0091C707 /* DatasourceType.swift in Sources */,
-				03FE223621848AB90091C707 /* ViewController.swift in Sources */,
-				03FE228A218498920091C707 /* QiitaAPI.swift in Sources */,
-				03FE2284218498370091C707 /* ModelType.swift in Sources */,
-				03FE228E21849AAD0091C707 /* Model+Repository.generated.swift in Sources */,
-				03FE22802184977B0091C707 /* Injectable.swift in Sources */,
-				03FE227D2184972B0091C707 /* MainViewController.swift in Sources */,
 				03FE2288218498870091C707 /* APIProvider.swift in Sources */,
+				03FE223421848AB90091C707 /* AppDelegate.swift in Sources */,
+				03FE22822184981F0091C707 /* DatasourceType.swift in Sources */,
+				03FE228C218499150091C707 /* Error.swift in Sources */,
+				03FE22802184977B0091C707 /* Injectable.swift in Sources */,
+				03FE227B2184972B0091C707 /* MainPresenter.swift in Sources */,
+				03FE227D2184972B0091C707 /* MainViewController.swift in Sources */,
+				03FE228E21849AAD0091C707 /* Model+Repository.generated.swift in Sources */,
+				03FE2284218498370091C707 /* ModelType.swift in Sources */,
+				03FE228A218498920091C707 /* QiitaAPI.swift in Sources */,
+				03FE2286218498520091C707 /* RepositoryType.swift in Sources */,
+				03FE223621848AB90091C707 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
