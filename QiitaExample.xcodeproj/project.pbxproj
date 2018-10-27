@@ -92,12 +92,12 @@
 		03FE222721848AB90091C707 = {
 			isa = PBXGroup;
 			children = (
+				EDE3DAAD166D1917E40BD3E0 /* Frameworks */,
+				710E00054C1CF481E69558D0 /* Pods */,
+				03FE223121848AB90091C707 /* Products */,
 				03FE223221848AB90091C707 /* QiitaExample */,
 				03FE224721848ABC0091C707 /* QiitaExampleTests */,
 				03FE225221848ABC0091C707 /* QiitaExampleUITests */,
-				03FE223121848AB90091C707 /* Products */,
-				710E00054C1CF481E69558D0 /* Pods */,
-				EDE3DAAD166D1917E40BD3E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,11 +115,11 @@
 			isa = PBXGroup;
 			children = (
 				03FE223321848AB90091C707 /* AppDelegate.swift */,
-				03FE223521848AB90091C707 /* ViewController.swift */,
-				03FE223721848AB90091C707 /* Main.storyboard */,
 				03FE223A21848ABC0091C707 /* Assets.xcassets */,
-				03FE223C21848ABC0091C707 /* LaunchScreen.storyboard */,
 				03FE223F21848ABC0091C707 /* Info.plist */,
+				03FE223C21848ABC0091C707 /* LaunchScreen.storyboard */,
+				03FE223721848AB90091C707 /* Main.storyboard */,
+				03FE223521848AB90091C707 /* ViewController.swift */,
 			);
 			path = QiitaExample;
 			sourceTree = "<group>";
@@ -127,8 +127,8 @@
 		03FE224721848ABC0091C707 /* QiitaExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				03FE224821848ABC0091C707 /* QiitaExampleTests.swift */,
 				03FE224A21848ABC0091C707 /* Info.plist */,
+				03FE224821848ABC0091C707 /* QiitaExampleTests.swift */,
 			);
 			path = QiitaExampleTests;
 			sourceTree = "<group>";
@@ -136,8 +136,8 @@
 		03FE225221848ABC0091C707 /* QiitaExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				03FE225321848ABC0091C707 /* QiitaExampleUITests.swift */,
 				03FE225521848ABC0091C707 /* Info.plist */,
+				03FE225321848ABC0091C707 /* QiitaExampleUITests.swift */,
 			);
 			path = QiitaExampleUITests;
 			sourceTree = "<group>";
@@ -273,8 +273,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03FE223E21848ABC0091C707 /* LaunchScreen.storyboard in Resources */,
 				03FE223B21848ABC0091C707 /* Assets.xcassets in Resources */,
+				03FE223E21848ABC0091C707 /* LaunchScreen.storyboard in Resources */,
 				03FE223921848AB90091C707 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,8 +395,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03FE223621848AB90091C707 /* ViewController.swift in Sources */,
 				03FE223421848AB90091C707 /* AppDelegate.swift in Sources */,
+				03FE223621848AB90091C707 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
