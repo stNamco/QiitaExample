@@ -1,4 +1,4 @@
-// 
+//
 //  UserUsecase.swift
 //  QiitaExample
 //
@@ -29,7 +29,6 @@ struct UserUsecase<T: UserRepository> {
 }
 
 private extension UserUsecase {
-	func test() {
-
-	}
+    func test() {
+    }
 }

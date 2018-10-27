@@ -15,7 +15,7 @@ final class MainPresenter {
     private weak var view: MainView!
     private(set) var props: MainViewController.Dependency!
 //    private let usecase:
-
+    
     init(view: MainView, dependency: MainViewController.Dependency) {
         self.view = view
         props = dependency

@@ -248,8 +248,8 @@
 		03FE226A218495910091C707 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				03FE229D21849F2E0091C707 /* UserUsecase.swift */,
 				03FE229E21849F2E0091C707 /* User.swift */,
+				03FE229D21849F2E0091C707 /* UserUsecase.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -586,15 +586,15 @@
 				03FE22822184981F0091C707 /* DatasourceType.swift in Sources */,
 				03FE228C218499150091C707 /* Error.swift in Sources */,
 				03FE22802184977B0091C707 /* Injectable.swift in Sources */,
-				03FE229821849E220091C707 /* RealmDatasource.swift in Sources */,
-				03FE229F21849F2E0091C707 /* UserUsecase.swift in Sources */,
 				03FE227B2184972B0091C707 /* MainPresenter.swift in Sources */,
-				03FE22A021849F2E0091C707 /* User.swift in Sources */,
 				03FE227D2184972B0091C707 /* MainViewController.swift in Sources */,
 				03FE228E21849AAD0091C707 /* Model+Repository.generated.swift in Sources */,
 				03FE2284218498370091C707 /* ModelType.swift in Sources */,
 				03FE228A218498920091C707 /* QiitaAPI.swift in Sources */,
+				03FE229821849E220091C707 /* RealmDatasource.swift in Sources */,
 				03FE2286218498520091C707 /* RepositoryType.swift in Sources */,
+				03FE22A021849F2E0091C707 /* User.swift in Sources */,
+				03FE229F21849F2E0091C707 /* UserUsecase.swift in Sources */,
 				03FE223621848AB90091C707 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

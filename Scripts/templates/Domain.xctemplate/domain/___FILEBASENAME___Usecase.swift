@@ -23,7 +23,6 @@ struct ___VARIABLE_productName___Usecase<T: ___VARIABLE_productName___Repository
 }
 
 private extension ___VARIABLE_productName___Usecase {
-	func test() {
-
-	}
+    func test() {
+    }
 }
