@@ -458,8 +458,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03F0846421889802006674DE /* DetailViewController.storyboard in Resources */,
 				03FE223B21848ABC0091C707 /* Assets.xcassets in Resources */,
+				03F0846421889802006674DE /* DetailViewController.storyboard in Resources */,
 				03FE227C2184972B0091C707 /* MainViewController.storyboard in Resources */,
 				03FE2275218496AD0091C707 /* Model+Repository.stencil in Resources */,
 			);
@@ -600,16 +600,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				03FE2288218498870091C707 /* APIProvider.swift in Sources */,
-				03F0846A21889828006674DE /* Article.swift in Sources */,
 				03FE223421848AB90091C707 /* AppDelegate.swift in Sources */,
+				03F0846A21889828006674DE /* Article.swift in Sources */,
 				03FE22822184981F0091C707 /* DatasourceType.swift in Sources */,
+				03F0846321889802006674DE /* DetailPresenter.swift in Sources */,
+				03F0846521889802006674DE /* DetailViewController.swift in Sources */,
 				03FE228C218499150091C707 /* Error.swift in Sources */,
 				03FE22802184977B0091C707 /* Injectable.swift in Sources */,
 				03FE227B2184972B0091C707 /* MainPresenter.swift in Sources */,
 				03FE227D2184972B0091C707 /* MainViewController.swift in Sources */,
-				03F0846521889802006674DE /* DetailViewController.swift in Sources */,
 				03FE228E21849AAD0091C707 /* Model+Repository.generated.swift in Sources */,
-				03F0846321889802006674DE /* DetailPresenter.swift in Sources */,
 				03FE2284218498370091C707 /* ModelType.swift in Sources */,
 				03FE228A218498920091C707 /* QiitaAPI.swift in Sources */,
 				03FE229821849E220091C707 /* RealmDatasource.swift in Sources */,

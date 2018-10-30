@@ -1,4 +1,4 @@
-// 
+//
 //  DetailPresenter.swift
 //  QiitaExample
 //
