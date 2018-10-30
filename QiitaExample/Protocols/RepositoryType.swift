@@ -13,7 +13,7 @@ import Result
 public protocol RepositoryType {
     var datasource: DatasourceType { get }
     var dataProvider: MoyaProvider<QiitaAPI> { get }
-    func store(item: Entity)
+    func update(item: Entity)
     func item(id: String)
     func items(target: QiitaAPI, completion: @escaping ((_ result: Result<[Entity], GeneralError>) -> Void))
     func delete(id: String)

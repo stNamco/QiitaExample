@@ -20,7 +20,7 @@ final class DefaultUserRepository: UserRepository {
         self.dataProvider = dataProvider
     }
 
-    func store(item: Entity) {
+    func update(item: Entity) {
         datasource.store(item: item)
     }
 
