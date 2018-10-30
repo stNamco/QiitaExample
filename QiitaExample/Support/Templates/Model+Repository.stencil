@@ -18,7 +18,7 @@ final class Default{{type.name}}Repository: {{type.name}}Repository {
         self.dataProvider = dataProvider
     }
 
-    func store(item: Entity) {
+    func update(item: Entity) {
         datasource.store(item: item)
     }
 
