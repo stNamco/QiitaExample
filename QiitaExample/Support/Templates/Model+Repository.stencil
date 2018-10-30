@@ -6,7 +6,6 @@ import Result
 // MARK: {{ type.name }} Model
 
 protocol {{type.name}}Repository: RepositoryType {
-    associatedtype Model = {{type.name}}
     var datasource: DatasourceType { get }
 }
 
@@ -28,7 +27,7 @@ final class Default{{type.name}}Repository: {{type.name}}Repository {
         datasource.item(id: id)
     }
 
-    func items(target: QiitaAPI, completion: @escaping ((Result<[Model], GeneralError>) -> Void)) {
+    func items(target: QiitaAPI, completion: @escaping ((Result<[Entity], GeneralError>) -> Void)) {
         qiitaProvider.requestWithMapping(target, entity: {{type.name}}.self, entityType: .items) { [weak self] (result) in
         switch result {
             case .success(let res):

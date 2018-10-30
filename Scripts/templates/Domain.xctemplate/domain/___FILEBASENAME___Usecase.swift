@@ -3,14 +3,14 @@
 import Foundation
 import Result
 
-struct ___VARIABLE_productName___Usecase<T: ___VARIABLE_productName___Repository> {
-    private var repository: T
+struct ___VARIABLE_productName___Usecase {
+    private var repository: ___VARIABLE_productName___Repository!
     
     enum Target {
         case test()
     }
     
-    init(repository: T) {
+    init(repository: ___VARIABLE_productName___Repository) {
         self.repository = repository
     }
     

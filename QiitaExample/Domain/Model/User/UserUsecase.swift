@@ -9,15 +9,15 @@
 import Foundation
 import Result
 
-struct UserUsecase<T: UserRepository> {
-    private var repository: T
+struct UserUsecase {
+    private var repository: UserRepository!
     
     enum Target {
         case test()
         case getUsers(page: Int, perPage: Int)
     }
     
-    init(repository: T) {
+    init(repository: UserRepository) {
         self.repository = repository
     }
     
