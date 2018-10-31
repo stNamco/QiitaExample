@@ -29,7 +29,7 @@ extension MoyaProvider {
     @discardableResult
     func requestWithMapping<T: Entity>(_ target: Target, callbackQueue: DispatchQueue? = .none, progress: Moya.ProgressBlock? = .none, entity: T.Type, entityType: EntityType = .item, completion: @escaping ResultCompletion<T>) -> Cancellable {
         return request(target) { result in
-            
+
             switch result {
             case .success(let res):
                 do {
@@ -48,14 +48,14 @@ extension MoyaProvider {
                 } catch {
                     completion(.failure(MoyaError.jsonMapping(res)))
                 }
-                
+
             case .failure(let error):
                 // this means there was a network failure - either the request
                 // wasn't sent (connectivity), or no response was received (server
                 // timed out).  If the server responds with a 4xx or 5xx error, that
                 // will be sent as a ".success"-ful response.
                 print("error: \(error)")
-                
+
                 completion(.failure(error))
             }
         }

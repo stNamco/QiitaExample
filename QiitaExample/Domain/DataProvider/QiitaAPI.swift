@@ -18,7 +18,7 @@ extension QiitaAPI: TargetType {
     public var baseURL: URL {
         return URL(string: "https://qiita.com/api/v2")!
     }
-    
+
     public var path: String {
         switch self {
         case .users:
@@ -27,18 +27,18 @@ extension QiitaAPI: TargetType {
             return "/items"
         }
     }
-    
+
     public var method: Moya.Method {
         switch self {
         case .users, .items:
             return .get
         }
     }
-    
+
     public var sampleData: Data {
         return Data()
     }
-    
+
     public var parameters: [String: Any]? {
         switch self {
         case .users(let page, let perPage):
@@ -47,11 +47,11 @@ extension QiitaAPI: TargetType {
             return ["page": page, "per_page": perPage]
         }
     }
-    
+
     public var parameterEncoding: ParameterEncoding {
         return URLEncoding.default
     }
-    
+
     public var task: Task {
         if let param = parameters {
             return .requestParameters(parameters: param, encoding: parameterEncoding)
@@ -59,7 +59,7 @@ extension QiitaAPI: TargetType {
             return .requestPlain
         }
     }
-    
+
     public var headers: [String: String]? {
         return [:]
     }

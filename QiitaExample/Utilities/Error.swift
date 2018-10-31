@@ -18,7 +18,7 @@ public enum APIError: Error {
     case server(Int)
     case parseError(String)
     case unknown(String)
-    
+
     var message: String {
         switch self {
         case .network:
