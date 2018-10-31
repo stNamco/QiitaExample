@@ -56,10 +56,6 @@ extension MainViewController {
 // MARK: - Others
 
 extension MainViewController {
-
-
-
-    
 }
 
 // MARK: - UIT
