@@ -37,10 +37,6 @@ private extension MainViewController {
         tableView.dataSource = self
         tableView.delegate = self
         presenter.fetch()
-
-
-
-        
     }
 }
 
