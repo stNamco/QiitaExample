@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03E03A4E2189C03F00CF54EE /* Model+Repository.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E03A4D2189C03F00CF54EE /* Model+Repository.generated.swift */; };
 		03F0846321889802006674DE /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0846021889802006674DE /* DetailPresenter.swift */; };
 		03F0846421889802006674DE /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F0846121889802006674DE /* DetailViewController.storyboard */; };
 		03F0846521889802006674DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0846221889802006674DE /* DetailViewController.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03E03A4D2189C03F00CF54EE /* Model+Repository.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Model+Repository.generated.swift"; sourceTree = "<group>"; };
 		03F0846021889802006674DE /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		03F0846121889802006674DE /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
 		03F0846221889802006674DE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 		03FE2268218491970091C707 /* CodeGenerated */ = {
 			isa = PBXGroup;
 			children = (
+				03E03A4D2189C03F00CF54EE /* Model+Repository.generated.swift */,
 			);
 			path = CodeGenerated;
 			sourceTree = "<group>";
@@ -599,6 +602,7 @@
 				03FE2288218498870091C707 /* APIProvider.swift in Sources */,
 				03FE223421848AB90091C707 /* AppDelegate.swift in Sources */,
 				03F0846A21889828006674DE /* Article.swift in Sources */,
+				03E03A4E2189C03F00CF54EE /* Model+Repository.generated.swift in Sources */,
 				03FE22822184981F0091C707 /* DatasourceType.swift in Sources */,
 				03F0846321889802006674DE /* DetailPresenter.swift in Sources */,
 				03F0846521889802006674DE /* DetailViewController.swift in Sources */,
