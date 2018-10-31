@@ -18,7 +18,5 @@ final class DetailPresenter {
     init(view: DetailView, dependency: DetailViewController.Dependency) {
         self.view = view
         props = dependency
-
-        print("props \(props)")
     }
 }

@@ -1,9 +1,12 @@
 excluded:
  - Pods/
  - Carthage/
- - SourceryExamples/Resource/R.generated.swift
  - R.generated.swift
  - Scripts/
+
+line_length:
+- 300   # warning
+- 400   # error
 
 type_body_length:
 - 400   # warning
@@ -18,36 +21,110 @@ function_body_length:
 - 200   # error
 
 opt_in_rules:
- - closure_end_indentation
- # - closure_spacing
- # - conditional_returns_on_newline
- - empty_count
- - explicit_init
- # - explicit_type_interface
- - fatal_error_message
- - first_where
- - force_unwrapping
- - nimble_operator
- - number_separator
- - operator_usage_whitespace
- - overridden_super_call
- - prohibited_super_call
- - redundant_nil_coalescing
- - sorted_imports
- - switch_case_on_newline
+ # - closure_end_indentation
+ # # - closure_spacing
+ # # - conditional_returns_on_newline
+ # - empty_count
+ # - explicit_init
+ # # - explicit_type_interface
+ # - fatal_error_message
+ # - first_where
+ # - force_unwrapping
+ # - nimble_operator
+ # - number_separator
+ # - operator_usage_whitespace
+ # - overridden_super_call
+ # - prohibited_super_call
+ # - redundant_nil_coalescing
+ # - sorted_imports
+ # - switch_case_on_newline
+
+
+
+# # defaultルール以外にopt-inから採用するルール
+# opt_in_rules:
+- array_init
+- attributes
+- closure_end_indentation
+- closure_spacing
+# - conditional_returns_on_newline
+- contains_over_first_not_nil #p
+- discouraged_object_literal
+- discouraged_optional_boolean
+# - discouraged_optional_collection
+- empty_count #p
+- empty_string #p
+# - explicit_acl
+- explicit_enum_raw_value
+- explicit_init
+# - explicit_top_level_acl
+# - explicit_type_interface
+- extension_access_modifier
+- fatal_error_message
+# - file_header
+- first_where #p
+- force_unwrapping # n
+- implicit_return
+# - implicitly_unwrapped_optional #
+- joined_default_parameter
+# - let_var_whitespace #
+- literal_expression_end_indentation
+- multiline_arguments
+- multiline_parameters
+- nimble_operator
+# - no_extension_access_modifier
+# - no_grouping_extension
+- number_separator
+- object_literal
+- operator_usage_whitespace
+- overridden_super_call
+- override_in_extension
+- pattern_matching_keywords
+# - prefixed_toplevel_constant
+- private_action
+# - private_outlet
+- prohibited_super_call
+- quick_discouraged_call
+- quick_discouraged_focused_test
+- quick_discouraged_pending_test
+- redundant_nil_coalescing
+- required_enum_case
+- single_test_class
+- sorted_first_last #p
+- sorted_imports
+- strict_fileprivate
+- switch_case_on_newline
+- trailing_closure
+- unneeded_parentheses_in_closure_argument
+- untyped_error_in_catch
+- vertical_parameter_alignment_on_call
+- yoda_condition
+
 
 disabled_rules:
- - trailing_whitespace
- # we cannot use this rule, if use enum.
- - cyclomatic_complexity
- - line_length
- - large_tuple
- - implicitly_unwrapped_optional
- - attributes
- - object_literal
- - private_outlet
- - number_separator
- - identifier_name
+ # - trailing_whitespace
+ # # we cannot use this rule, if use enum.
+ # - cyclomatic_complexity
+ # - line_length
+ # - large_tuple
+ # - implicitly_unwrapped_optional
+ # - attributes
+ # - object_literal
+ # - private_outlet
+ # - number_separator
+ # - identifier_name
+ # opt-inルールの中で無効にするルール
+# - conditional_returns_on_newline # ガード文などは簡潔に一行で記述したいため
+# - discouraged_optional_collection # PHImageManagerの既存仕様のため
+# - explicit_enum_raw_value # 暗黙的なraw値で問題ないため
+# - explicit_type_interface # 型推論を利用したいため
+# - fatal_error_message # メッセージは不要なため
+# - file_header # ヘッダには特に決まりがないため
+# - lower_acl_than_parent # 対応不可のため
+# - no_extension_access_modifier # extension_access_modifierを優先するため
+# - no_grouping_extension # グルーピングにextensionを利用したいため
+# - strict_fileprivate # fileprivateを利用したいため
+# - switch_case_on_newline # caseと同じ行に記述したいため
 
 identifier_name:
   min_length:
