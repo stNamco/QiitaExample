@@ -6,7 +6,7 @@ def network
 end
 
 def formatter
-  pod 'SwiftLint', '~> 0.26.0'
+  pod 'SwiftLint', '~> 0.27.0'
   pod 'SwiftFormat/CLI', '0.33.7'
   pod 'Sourcery', '0.13.1'
 end

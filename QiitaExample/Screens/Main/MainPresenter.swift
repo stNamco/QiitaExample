@@ -17,7 +17,7 @@ final class MainPresenter {
     private(set) var props: MainViewController.Dependency!
     private let usecase: UserUsecase = UserUsecase(repository: DefaultUserRepository())
     private(set) var data: [User] = []
-    
+
     init(view: MainView, dependency: MainViewController.Dependency) {
         self.view = view
         props = dependency

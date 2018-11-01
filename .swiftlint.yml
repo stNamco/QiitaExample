@@ -1,9 +1,12 @@
 excluded:
  - Pods/
  - Carthage/
- - SourceryExamples/Resource/R.generated.swift
- - R.generated.swift
+ - Crown/Resources/R.generated.swift
  - Scripts/
+
+line_length:
+- 300   # warning
+- 400   # error
 
 type_body_length:
 - 400   # warning
@@ -18,36 +21,31 @@ function_body_length:
 - 200   # error
 
 opt_in_rules:
- - closure_end_indentation
- # - closure_spacing
- # - conditional_returns_on_newline
- - empty_count
- - explicit_init
- # - explicit_type_interface
- - fatal_error_message
- - first_where
- - force_unwrapping
- - nimble_operator
- - number_separator
- - operator_usage_whitespace
- - overridden_super_call
- - prohibited_super_call
- - redundant_nil_coalescing
- - sorted_imports
- - switch_case_on_newline
+- closure_end_indentation
+- contains_over_first_not_nil # kind - perfomance 
+- discouraged_optional_boolean
+- empty_count # kind - perfomance 
+- empty_string # kind - perfomance 
+- first_where # kind - perfomance 
+- force_unwrapping
+- literal_expression_end_indentation
+- multiline_parameters
+- operator_usage_whitespace
+- overridden_super_call
+- override_in_extension
+- private_action
+- redundant_nil_coalescing
+- sorted_first_last # kind - perfomance 
+- switch_case_on_newline
+- untyped_error_in_catch
+- vertical_parameter_alignment_on_call
+- yoda_condition
+
 
 disabled_rules:
- - trailing_whitespace
- # we cannot use this rule, if use enum.
- - cyclomatic_complexity
- - line_length
- - large_tuple
- - implicitly_unwrapped_optional
- - attributes
- - object_literal
- - private_outlet
- - number_separator
- - identifier_name
+# SwiftFormatを利用することで空白は削除できる。SwiftFormatでは'--trimwhitespace nonblank-lines'を利用し、空行のインデントを残しているので、trailing_whitespaceはdisabledにしておく
+- trailing_whitespace 
+- large_tuple
 
 identifier_name:
   min_length:

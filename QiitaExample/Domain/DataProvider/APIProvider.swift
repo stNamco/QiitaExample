@@ -44,7 +44,8 @@ public let qiitaProvider = MoyaProvider<QiitaAPI>(
     plugins: [
         NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter),
         NetworkActivityPlugin(networkActivityClosure: networkActivityClosure)
-])
+    ]
+)
 
 let endpointClosure = { (target: QiitaAPI) -> Endpoint in
     let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)

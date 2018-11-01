@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03E03A4E2189C03F00CF54EE /* Model+Repository.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E03A4D2189C03F00CF54EE /* Model+Repository.generated.swift */; };
 		03F0846321889802006674DE /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0846021889802006674DE /* DetailPresenter.swift */; };
 		03F0846421889802006674DE /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F0846121889802006674DE /* DetailViewController.storyboard */; };
 		03F0846521889802006674DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0846221889802006674DE /* DetailViewController.swift */; };
@@ -26,7 +27,6 @@
 		03FE2288218498870091C707 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE2287218498870091C707 /* APIProvider.swift */; };
 		03FE228A218498920091C707 /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE2289218498920091C707 /* QiitaAPI.swift */; };
 		03FE228C218499150091C707 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE228B218499150091C707 /* Error.swift */; };
-		03FE228E21849AAD0091C707 /* Model+Repository.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE228D21849AAD0091C707 /* Model+Repository.generated.swift */; };
 		03FE229821849E220091C707 /* RealmDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE229721849E220091C707 /* RealmDatasource.swift */; };
 		03FE229F21849F2E0091C707 /* UserUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE229D21849F2E0091C707 /* UserUsecase.swift */; };
 		03FE22A021849F2E0091C707 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE229E21849F2E0091C707 /* User.swift */; };
@@ -53,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03E03A4D2189C03F00CF54EE /* Model+Repository.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Model+Repository.generated.swift"; sourceTree = "<group>"; };
 		03F0846021889802006674DE /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		03F0846121889802006674DE /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
 		03F0846221889802006674DE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +79,6 @@
 		03FE2287218498870091C707 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		03FE2289218498920091C707 /* QiitaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
 		03FE228B218499150091C707 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		03FE228D21849AAD0091C707 /* Model+Repository.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Model+Repository.generated.swift"; sourceTree = "<group>"; };
 		03FE229721849E220091C707 /* RealmDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatasource.swift; sourceTree = "<group>"; };
 		03FE229D21849F2E0091C707 /* UserUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUsecase.swift; sourceTree = "<group>"; };
 		03FE229E21849F2E0091C707 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -258,7 +258,7 @@
 		03FE2268218491970091C707 /* CodeGenerated */ = {
 			isa = PBXGroup;
 			children = (
-				03FE228D21849AAD0091C707 /* Model+Repository.generated.swift */,
+				03E03A4D2189C03F00CF54EE /* Model+Repository.generated.swift */,
 			);
 			path = CodeGenerated;
 			sourceTree = "<group>";
@@ -609,7 +609,7 @@
 				03FE22802184977B0091C707 /* Injectable.swift in Sources */,
 				03FE227B2184972B0091C707 /* MainPresenter.swift in Sources */,
 				03FE227D2184972B0091C707 /* MainViewController.swift in Sources */,
-				03FE228E21849AAD0091C707 /* Model+Repository.generated.swift in Sources */,
+				03E03A4E2189C03F00CF54EE /* Model+Repository.generated.swift in Sources */,
 				03FE2284218498370091C707 /* ModelType.swift in Sources */,
 				03FE228A218498920091C707 /* QiitaAPI.swift in Sources */,
 				03FE229821849E220091C707 /* RealmDatasource.swift in Sources */,

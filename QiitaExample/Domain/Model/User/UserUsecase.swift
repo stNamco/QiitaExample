@@ -11,16 +11,16 @@ import Result
 
 struct UserUsecase {
     private var repository: UserRepository!
-    
+
     enum Target {
         case test()
         case getUsers(page: Int, perPage: Int)
     }
-    
+
     init(repository: UserRepository) {
         self.repository = repository
     }
-    
+
     func exec(target: UserUsecase.Target, completion: @escaping ((_ result: Result<[User], GeneralError>) -> Void)) {
         switch target {
         case .test:
@@ -35,7 +35,7 @@ private extension UserUsecase {
     func test() {
         print("test")
     }
-    
+
     func getUsers(page: Int, perPage: Int, completion: @escaping ((_ result: Result<[User], GeneralError>) -> Void)) {
         repository.items(target: .users(page: page, perPage: perPage)) { result in
             switch result {

@@ -11,18 +11,18 @@ import UIKit
 final class DetailViewController: UIViewController, VCInjectable {
     struct Dependency: VCDependency {}
     var presenter: DetailPresenter!
-    
+
     func setterInjection(with dependency: DetailViewController.Dependency) {
         presenter = DetailPresenter(view: self, dependency: dependency)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setterInjection(with: .init())
         configure()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
